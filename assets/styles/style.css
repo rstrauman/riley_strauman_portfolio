@@ -1,1 +1,52 @@
-@import "./reset.css";
+@import "./container.css";
+
+/******************************/
+/*          Header            */
+/******************************/
+
+header, .header-container {
+    height: 60px;
+}
+
+.header-container, .nav-container {
+    display: flex;
+}
+
+header {
+    background: linear-gradient(135deg, #7C3AED, #06B6D4);
+}
+
+.header-container {
+    justify-content: space-between;
+    place-items: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.25s ease-in-out;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    height: 60px;
+    line-height: 60px;
+}
+
+#navbar-item{
+    padding: 0 40px;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+}
+
+#navbar-item:hover {
+    cursor: pointer;
+    background-color: #07aac7a7;
+}
+
