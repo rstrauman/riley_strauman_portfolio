@@ -1,5 +1,9 @@
 @import "./container.css";
 
+main {
+    background-color: #f5f5f5;
+}
+
 /******************************/
 /*          Header            */
 /******************************/
@@ -54,6 +58,7 @@ ul {
 /*********************************/
 /*            Hero               */
 /*********************************/
+
 #overlay {
     position: absolute;
     inset: 0;
@@ -72,17 +77,36 @@ ul {
 
 #hero-content {
     display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 2;
     justify-content: center;
     align-items: center;
     height: 100%;
     text-align: center;
-    color: #fff
+    color: #fff;
+}
+
+#hero-content {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
+}
+
+#hero-content h1 {
+    font-size: 36px;
+    font-weight: 600;
 }
 
 #hero-content h2 {
+    padding: 80px 0 0 0;
     font-size: 72px;
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
+    background: linear-gradient(135deg, #7C3AED, #06B6D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    font-weight: 800;
+}
+
+#hero-content p {
+    font-size: 18px;
 }
