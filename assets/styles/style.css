@@ -122,7 +122,7 @@ ul {
 /*            About              */
 /*********************************/
 
-#about {
+#about, #tech-stack {
     padding: 20px 0;
     margin-top: 100px;
     text-align: center;
@@ -146,7 +146,7 @@ ul {
     justify-content: space-around;
 }
 
-#about h3{
+h3{
     font-size: 24px;
     font-weight: 700;
     padding: 20px;
@@ -155,4 +155,25 @@ ul {
 .headshot {
     width: 300px;
     border-radius: 50px;
+}
+
+/*********************************/
+/*          Techstack            */
+/*********************************/
+
+.tech-stack-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.tech-stack-container img {
+    width: 100px;
+    height: 100px;
+    transition: all 0.25s ease-in-out;
+}
+
+.tech-stack-container img:hover {
+    scale: 1.1;
+    cursor: pointer;
 }
