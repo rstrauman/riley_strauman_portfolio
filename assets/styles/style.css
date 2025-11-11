@@ -10,6 +10,9 @@ main {
 
 header, .header-container {
     height: 60px;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
 }
 
 .header-container, .nav-container {
@@ -35,6 +38,10 @@ header {
 .icon-Simg:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.025);
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {
@@ -115,7 +122,7 @@ ul {
 /*            About              */
 /*********************************/
 
-.about {
+#about {
     padding: 20px 0;
     margin-top: 100px;
     text-align: center;
@@ -127,11 +134,25 @@ ul {
 
 }
 
-.about h3{
-    font-weight: 600;
-    padding: 10px;
+.about-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
 }
 
-.about p {
-    padding: 10px;
+.about-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#about h3{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 50px;
 }
