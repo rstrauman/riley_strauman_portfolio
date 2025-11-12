@@ -1,6 +1,6 @@
 @import "./container.css";
 
-main {
+body {
     background: linear-gradient(to top, #7C3AED, #06B6D4);
 }
 
@@ -15,7 +15,7 @@ header, .header-container {
     z-index: 3;
 }
 
-.header-container, .nav-container {
+.header-container, .nav-container, #hero-content, #socials, .email-container {
     display: flex;
 }
 
@@ -83,7 +83,6 @@ ul {
 }
 
 #hero-content {
-    display: flex;
     flex-direction: column;
     position: relative;
     z-index: 2;
@@ -122,7 +121,7 @@ ul {
 /*            About              */
 /*********************************/
 
-#about, #tech-stack {
+#about, #tech-stack, #contact, #about {
     padding: 20px 0;
     margin-top: 100px;
     text-align: center;
@@ -201,4 +200,31 @@ h3{
 .tech-stack-container img:hover {
     scale: 1.2;
     cursor: pointer;
+}
+
+/*********************************/
+/*            Contact            */
+/*********************************/
+
+.email-container {
+    justify-content: center;
+    place-items: center;
+    gap: 20px;
+    color: #000;
+    font-weight: 450;
+}
+
+.email-container div {
+    padding: 20px;
+}
+
+/*********************************/
+/*            Footer             */
+/*********************************/
+
+footer, .footer-container {
+    height: 60px;
+    width: 100%;
+    background-color: #0a0a0a; 
+    margin-top: 100px;
 }
