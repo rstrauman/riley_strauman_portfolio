@@ -157,6 +157,31 @@ h3{
     border-radius: 50px;
 }
 
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials div {
+    transition: all 0.25s ease-in-out; 
+}
+
+#icons {
+    font-size: 36px;
+    color: #000;    
+    transition: all 0.25s ease-in-out;                            
+}  
+
+.socials div:hover {
+    color: #fff;
+    scale: 1.2;
+}
+
+#icons:hover{
+    color: #fff;
+}
+
 /*********************************/
 /*          Techstack            */
 /*********************************/
@@ -174,6 +199,6 @@ h3{
 }
 
 .tech-stack-container img:hover {
-    scale: 1.1;
+    scale: 1.2;
     cursor: pointer;
 }
